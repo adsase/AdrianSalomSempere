@@ -12,13 +12,13 @@ public class pruebamayor {
 	Mayor datos= new Mayor();
 	@Before
 	public void setUp() throws Exception {
-		datos.setA(10);
+		datos.setA(40);
 		datos.setB(10);
 	}
 	
 	@Test
 	public void test() {
-		assertEquals(20,datos.mayor());
+		assertEquals(50,datos.mayor());
 	}
 
 }
