@@ -9,14 +9,16 @@ import codigo.Mayor;
 
 public class pruebamayor {
 
+	Mayor datos= new Mayor();
 	@Before
 	public void setUp() throws Exception {
-		
+		datos.setA(10);
+		datos.setB(10);
 	}
 	
 	@Test
 	public void test() {
-		assertequals();
+		assertEquals(20,datos.mayor());
 	}
 
 }
